@@ -1,0 +1,41 @@
+    input[type=submit] {
+        width: 100%;
+        background-color: indigo;
+        color: white;
+        font-size: 18px;
+        padding: 14px 22px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: maroon;
+        color: black;
+    }
+    
+    input,
+    textarea,
+    select {
+        padding: 10px 18px;
+        font-size: 10px;
+        margin: 8px 0;
+        border: 1px solid indigo;
+        border-bottom: 3px solid black;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-sizing: border-box;
+    }
+    
+    .div-ares {
+        margin: 7%;
+        height: 500px;
+        width: 700px;
+        border-top: 25px rgb(218, 17, 17) solid;
+        border-left: 4.5px rgb(218, 17, 17) solid;
+        border-right: 4.5px rgb(218, 17, 17) solid;
+        border-bottom: 4.5px rgb(218, 17, 17) solid;
+        border-radius: 15px;
+        background-color: rgb(214, 112, 11);
+    }

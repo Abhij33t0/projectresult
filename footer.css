@@ -1,0 +1,28 @@
+footer {
+    display: block;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 50px;
+    background-color: teal;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: rgb(26, 20, 20);
+}
+
+.tabtd {
+    background-color: teal;
+    line-height: 45px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    /* word-spacing: 15px; */
+}
+
+.tabtd>:hover {
+    line-height: 45px;
+    font-size: 25px;
+    font-weight: bold;
+}

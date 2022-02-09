@@ -1,0 +1,70 @@
+.menubar {
+    height: 650px;
+    display: inline-block;
+    width: 20%;
+    background-color: rgba(255, 51, 0, 0.836);
+}
+
+.menuitems {
+    padding: 0px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.asd {
+    padding: 5%;
+    display: block;
+    height: 30px;
+    width: auto;
+    background-color: hsla(16, 100%, 50%, 0.76);
+}
+
+.hidden {
+    height: 20px;
+    width: auto;
+}
+
+.addstdnt {
+    display: inline-block;
+    position: absolute;
+    height: 650px;
+    width: 40%;
+    background-color: brown;
+}
+
+input,
+textarea,
+select {
+    padding: 9px 18px;
+    font-size: 10px;
+    margin: 8px 0;
+    border: 1px solid indigo;
+    border-bottom: 3px solid black;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: indigo;
+    color: white;
+    font-size: 18px;
+    padding: 10px 22px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: maroon;
+    color: black;
+}
+
+.tdclass {
+    font-weight: bolder;
+    padding: 8px;
+}

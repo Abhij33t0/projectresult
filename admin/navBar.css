@@ -1,0 +1,57 @@
+nav {
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    height: 70px;
+    background-color: rgb(36, 180, 149);
+}
+
+.fontsize {
+    font-size: 15px;
+}
+
+nav ul li {
+    width: 160px;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0px 20px;
+    color: black;
+    background-color: rgb(36, 180, 149);
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    background: teal;
+    color: blueviolet;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 70px;
+    display: none;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 160px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    float: right;
+    margin-right: 80px;
+}

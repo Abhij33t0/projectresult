@@ -1,0 +1,23 @@
+/* .div-a {
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-right: 100px;
+} */
+
+.div-para {
+    font-size: 30px;
+    width: 50%;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.bg-image {
+    background-image: url("Bckgrnd.jpg");
+    background-color: #cccccc;
+    width: fit-content;
+    height: fit-content;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

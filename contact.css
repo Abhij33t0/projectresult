@@ -1,0 +1,67 @@
+.div1 {
+    margin-left: 5px;
+    height: 400px;
+    background-color: rgb(29, 78, 97);
+    width: 33%;
+    float: left;
+}
+
+.div2 {
+    background-color: cadetblue;
+    height: 400px;
+    width: 33%;
+    float: none;
+    display: inline-block;
+}
+
+.div3 {
+    background-color: rgb(133, 134, 30);
+    margin-right: 5px;
+    height: 400px;
+    width: 33%;
+    float: right;
+}
+
+.h2f {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.btn {
+    height: 30px;
+    width: 80px;
+    border-color: orangered;
+    border-radius: 15px;
+    color: green;
+    background-color: lemonchiffon;
+}
+
+.fa-instagram {
+    background: #ac1c1c;
+    color: rgb(255, 255, 255);
+}
+
+.fa-whatsapp {
+    background: #15ac86;
+    color: rgb(255, 255, 255);
+}
+
+.fa-google {
+    background: #ffffff;
+    color: rgb(255, 0, 0);
+}
+
+.fa-telegram {
+    background: #ffffff;
+    color: rgb(0, 85, 241);
+}
+
+.fa {
+    padding: 10px;
+    font-size: 35px;
+    width: 35px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 15px;
+}
