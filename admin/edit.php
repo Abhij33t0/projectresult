@@ -12,7 +12,8 @@ if($conn->connect_error)
     die("Connection Error:".$conn->connect_error);
 }
 // SQL query to select data from database
-$sql = "SELECT * FROM result WHERE 1 ";
+$sql = UPDATE `result` SET `fname`='[]',`lname`='[value-2]',`roll`='[value-3]',
+`hindi`='[value-4]',`english`='[value-5]',`science`='[value-6]',`math`='[value-7]',`cmptr`='[value-8]' WHERE 1
 $result = $conn->query($sql);
 $conn->close();
 ?>
@@ -91,60 +92,6 @@ $conn->close();
     </div>
     <div class="addstdnt">
         <center><br>
-            <h1>Student Details</h1>
-
-            <section>
-                <div style="height: 550px; overflow: auto";>
-                    <table style="height: 400px" ;>
-                        <tr>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Roll No</th>
-                            <th>Hindi</th>
-                            <th>English</th>
-                            <th>Science</th>
-                            <th>Math</th>
-                            <th>Computer</th>
-                        </tr>
-                        <!-- PHP CODE TO FETCH DATA FROM ROWS-->
-                        <?php // LOOP TILL END OF DATA
-                    while($rows = $result->fetch_assoc())
-                    {
-                ?>
-                        <tr>
-                            <!--FETCHING DATA FROM EACH
-                        ROW OF EVERY COLUMN-->
-                            <td>
-                                <?php echo $rows['fname'];?>
-                            </td>
-                            <td>
-                                <?php echo $rows['lname'];?>
-                            </td>
-                            <td>
-                                <?php echo $rows['roll'];?>
-                            </td>
-                            <td>
-                                <?php echo $rows['hindi'];?>
-                            </td>
-                            <td>
-                                <?php echo $rows['english'];?>
-                            </td>
-                            <td>
-                                <?php echo $rows['science'];?>
-                            </td>
-                            <td>
-                                <?php echo $rows['math'];?>
-                            </td>
-                            <td>
-                                <?php echo $rows['cmptr'];?>
-                            </td>
-                        </tr>
-                        <?php
-                    }
-                ?>
-                    </table>
-                </div>
-            </section>
 
         </center>
     </div>
