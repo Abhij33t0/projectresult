@@ -29,7 +29,7 @@ if($conn->query($sql)==TRUE)
     $msg = "SUCCESS:";
 }
 else {
-    echo "Connection Error:".$sql.$conn->error;
+    $msg = "NOT SUCCESS:";
 }
 $conn->close();
 
@@ -73,16 +73,16 @@ $conn->close();
             <ul class="hidden"></ul>
             <ul class="menuitems">
                 <a class="asd" href="dashboard.html">Dashboard</a></ul>
-            <ul class="menuitems"><a class="asd" href="chckstdnt.html">Check Students</a></ul>
+            <ul class="menuitems"><a class="asd" href="chckstdnt.php">Check Students</a></ul>
             <ul class="menuitems"><a style="background-color: brown;" class="asd" href="#">Add Student Result</a></ul>
-            <ul class="menuitems"><a class="asd" href="edit.html">Edit Details</a></ul>
+            <ul class="menuitems"><a class="asd" href="edit.php">Edit Details</a></ul>
             <ul class="menuitems"><a class="asd" href="more.html">More Info</a></ul>
 
         </div>
 
         <div class="addstdnt">
             <center>
-                <form action="" method="post">
+                <form method="post" action="">
                     <h1>Add Student Result</h1>
                     <table>
                         
