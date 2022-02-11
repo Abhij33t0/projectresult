@@ -105,15 +105,14 @@ $conn->close();
                             <th>Science</th>
                             <th>Math</th>
                             <th>Computer</th>
+                            <th>Delete Result</th>
                         </tr>
-                        <!-- PHP CODE TO FETCH DATA FROM ROWS-->
-                        <?php // LOOP TILL END OF DATA
+                        
+                        <?php
                     while($rows = $result->fetch_assoc())
                     {
                 ?>
                         <tr>
-                            <!--FETCHING DATA FROM EACH
-                        ROW OF EVERY COLUMN-->
                             <td>
                                 <?php echo $rows['fname'];?>
                             </td>

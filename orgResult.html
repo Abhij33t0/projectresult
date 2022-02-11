@@ -34,17 +34,14 @@
 
     <center>
         <div class="div-ares">
-            <form>
+            <form action="viewresult.php" method="post">
                 <h1 style="text-align: center; margin-top: 40px;">Examination Result</h1><br><br>
                 <table class="cen">
                     <tr>
                         <td class="tdclass">Enter Your Roll Number:</td>
-                        <td><input type="text" placeholder="Enter Your Roll Number" maxlength="5"></td>
+                        <td><input type="text" name="roll" required placeholder="Enter Your Roll Number" maxlength="5"></td>
                     </tr>
-                    <tr>
-                        <td class="tdclass">Date of Birth:</td>
-                        <td><input type="date" placeholder="Enter Your Date of Birth" maxlength="8"></td>
-                    </tr>
+
                     <tr>
                         <td><br><br>
                             <input type="submit" value="Check">
