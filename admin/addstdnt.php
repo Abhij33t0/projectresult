@@ -1,13 +1,5 @@
 <?php
-$fname = $_POST['fname'];
-$fathername = $_POST['fathername'];
-$regnum = $_POST['regnum'];
-$roll = $_POST['roll'];
-$hindi = $_POST['hindi'];
-$english = $_POST['english'];
-$science = $_POST['science'];
-$math = $_POST['math'];
-$cmptr = $_POST['cmptr'];
+
 
 $servername = "localhost";
 $username = "root";
@@ -20,6 +12,16 @@ if($conn->connect_error)
 {
     die("Connection Error:".$conn->connect_error);
 }
+if(isset($_POST['frmsbt'])){
+$fname = $_POST['fname'];
+$fathername = $_POST['fathername'];
+$regnum = $_POST['regnum'];
+$roll = $_POST['roll'];
+$hindi = $_POST['hindi'];
+$english = $_POST['english'];
+$science = $_POST['science'];
+$math = $_POST['math'];
+$cmptr = $_POST['cmptr'];
 
 $sql = "INSERT INTO result(fname,fathername,regnum,roll,hindi,english,science,math,cmptr) VALUES('$fname','$fathername','$regnum','$roll','$hindi','$english','$science','$math','$cmptr')";
 
@@ -30,7 +32,7 @@ if($conn->query($sql)==TRUE)
 }
 else {
     $msg = "NOT SUCCESS:";
-}
+}}
 $conn->close();
 
 ?>
@@ -136,7 +138,7 @@ $conn->close();
 
                         <tr>
                             <td>
-                                <input type="submit" value="Add">
+                                <input type="submit" value="Add" name= "frmsbt">
                                 <input type="reset" value="Reset">
 
                             </td>

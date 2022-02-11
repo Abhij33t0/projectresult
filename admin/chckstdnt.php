@@ -26,7 +26,7 @@ $conn->close();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="navBar.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="./admin.css">
     <style>
     table {
         margin: 0 auto;
