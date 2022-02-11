@@ -1,13 +1,13 @@
 <?php
 $fname = $_POST['fname'];
-$lname = $_POST['lname'];
+$fathername = $_POST['fathername'];
+$regnum = $_POST['regnum'];
 $roll = $_POST['roll'];
 $hindi = $_POST['hindi'];
 $english = $_POST['english'];
 $science = $_POST['science'];
 $math = $_POST['math'];
 $cmptr = $_POST['cmptr'];
-
 
 $servername = "localhost";
 $username = "root";
@@ -21,7 +21,7 @@ if($conn->connect_error)
     die("Connection Error:".$conn->connect_error);
 }
 
-$sql = "INSERT INTO result(fname,lname,roll,hindi,english,science,math,cmptr) VALUES('$fname','$lname','$roll','$hindi','$english','$science','$math','$cmptr')";
+$sql = "INSERT INTO result(fname,fathername,regnum,roll,hindi,english,science,math,cmptr) VALUES('$fname','$fathername','$regnum','$roll','$hindi','$english','$science','$math','$cmptr')";
 
 
 if($conn->query($sql)==TRUE)
@@ -92,16 +92,19 @@ $conn->close();
                         </tr>
                         <tr>
                             <td class="tdclass">Last Name:</td>
-                            <td><input type="text" required="required" name="lname" placeholder="Last Name" id="des"></td>
+                            <td><input type="text" required="required" name="fathername" placeholder="Father's Name" id="des"></td>
                         </tr>
-
+                        <tr>
+                            <td class="tdclass">Registration Number:</td>
+                            <td><input type="text" required="required" name="regnum" placeholder="Registration Number" id="des"></td>
+                        </tr>
                         <tr>
                             <td class="tdclass" id="tdid">Roll Number:</td>
                             <td>
-                                <input type="text" required="required" id="des" name="roll">
+                                <input type="text" required="required" id="des" placeholder="Roll Number" name="roll">
                             </td>
                         </tr>
-
+                        
                         <tr>
                             <td class="tdclass">Hindi:</td>
                             <td>

@@ -1,5 +1,5 @@
 .menubar {
-    height: 650px;
+    height: 750px;
     display: inline-block;
     width: 20%;
     background-color: rgba(255, 51, 0, 0.836);
@@ -29,8 +29,8 @@
 .addstdnt {
     display: inline-block;
     position: absolute;
-    height: 650px;
-    width: 40%;
+    height: 750px;
+    width: 53%;
     background-color: brown;
 }
 

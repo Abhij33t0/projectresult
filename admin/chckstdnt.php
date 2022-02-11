@@ -47,7 +47,7 @@ $conn->close();
     td {
         font-weight: bold;
         border: 0.8px solid black;
-        padding: 7px;
+        padding: 2px;
         text-align: center;
     }
 
@@ -97,8 +97,9 @@ $conn->close();
                 <div style="height: 550px; overflow: auto";>
                     <table style="height: 400px" ;>
                         <tr>
-                            <th>First Name</th>
-                            <th>Last Name</th>
+                            <th>Name</th>
+                            <th>Father's name</th>
+                            <th>Registration Number</th>
                             <th>Roll No</th>
                             <th>Hindi</th>
                             <th>English</th>
@@ -107,7 +108,7 @@ $conn->close();
                             <th>Computer</th>
                             <th>Delete Result</th>
                         </tr>
-                        
+
                         <?php
                     while($rows = $result->fetch_assoc())
                     {
@@ -117,11 +118,15 @@ $conn->close();
                                 <?php echo $rows['fname'];?>
                             </td>
                             <td>
-                                <?php echo $rows['lname'];?>
+                                <?php echo $rows['fathername'];?>
+                            </td>
+                            <td>
+                                <?php echo $rows['regnum'];?>
                             </td>
                             <td>
                                 <?php echo $rows['roll'];?>
                             </td>
+                            
                             <td>
                                 <?php echo $rows['hindi'];?>
                             </td>
@@ -150,3 +155,5 @@ $conn->close();
 </body>
 
 </html>
+
+<!-- "DELETE FROM `result` WHERE `result`.`Seriel` = 1" -->
